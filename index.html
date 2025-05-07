@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDO List</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<div class="todo-container">
+  <h1>Todo List</h1>
+  <input type="text" id="todoInput" placeholder="New Todo..." />
+  <input type="date" id="todoDate" />
+  <button id="addBtn">Add</button>
+
+  <div class="filters">
+    <div data-filter="all" class="filter active">All</div>
+    <div data-filter="active" class="filter">Active</div>
+    <div data-filter="completed" class="filter">Completed</div>
+  </div>
+
+  <ul id="todoList"></ul>
+
+  <div id="taskCounter">Remaining tasks: 0</div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
